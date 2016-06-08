@@ -17,18 +17,18 @@ DualMotorControl::DualMotorControl(int pinNumLeftA, int pinNumLeftB, int pinNumR
 
 void DualMotorControl::left(float speed) {
 	// Use set function
-	DualMotorControl::set(speed, _pinNumLeftA, _pinNumLeftB);
+	set(speed, _pinNumLeftA, _pinNumLeftB);
 }
 
 void DualMotorControl::right(float speed) {
 	// Use set function
-	DualMotorControl::set(speed, _pinNumRightA, _pinNumRightB);
+	set(speed, _pinNumRightA, _pinNumRightB);
 }
 
 void DualMotorControl::tank(float left_speed, float right_speed) {
 	// Use Left and Right functions
-	DualMotorControl::left(left_speed);
-	DualMotorControl::right(right_speed);
+	left(left_speed);
+	right(right_speed);
 }
 
 void DualMotorControl::set(float speed, int pinA, int pinB) {
