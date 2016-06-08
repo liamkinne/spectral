@@ -5,7 +5,7 @@
 
 class MotorControl {
 public:
-	MotorControl(float pinNumA, float pinNumB);
+	MotorControl(int pinNumA, int pinNumB);
 	void set(float speed);
 private:
 	float _pinNumA;
