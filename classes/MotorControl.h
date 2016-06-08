@@ -5,11 +5,11 @@
 
 class MotorControl {
 public:
-	MotorControl(int pinNumA, int pinNumB);
+	MotorControl(float pinNumA, float pinNumB);
 	void set(float speed);
 private:
-	int _pinNumA;
-	int _pinNumB;
+	float _pinNumA;
+	float _pinNumB;
 };
 
 #endif
